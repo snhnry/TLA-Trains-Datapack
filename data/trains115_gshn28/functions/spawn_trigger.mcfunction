@@ -7,9 +7,9 @@ execute if entity @a[y_rotation=203..247,distance=..5,limit=1,sort=nearest] run 
 execute if entity @a[y_rotation=248..292,distance=..5,limit=1,sort=nearest] run scoreboard players set @s rptrain_rotation 270
 execute if entity @a[y_rotation=293..337,distance=..5,limit=1,sort=nearest] run scoreboard players set @s rptrain_rotation 315
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s rptrain_rotation
-execute positioned ^ ^ ^8 if entity @e[tag=rptrain_train,distance=..5] run tellraw @p {"text":"[Too close of another train!]","color":"red"}
-execute positioned ^ ^ ^-8 if entity @e[tag=rptrain_train,distance=..5] run tellraw @p {"text":"[Too close of another train!]","color":"red"}
-execute if entity @e[tag=rptrain_train,distance=..5] run tellraw @p {"text":"[Too close of another train!]","color":"red"}
+execute positioned ^ ^ ^8 if entity @e[tag=rptrain_train,distance=..5] run tellraw @p {"text":"[Too close to another train!]","color":"red"}
+execute positioned ^ ^ ^-8 if entity @e[tag=rptrain_train,distance=..5] run tellraw @p {"text":"[Too close to another train!]","color":"red"}
+execute if entity @e[tag=rptrain_train,distance=..5] run tellraw @p {"text":"[Too close to another train!]","color":"red"}
 execute positioned ^ ^ ^8 if entity @e[tag=rptrain_train,distance=..5] run tag @s add rptrain_spawnblocked
 execute positioned ^ ^ ^-8 if entity @e[tag=rptrain_train,distance=..5] run tag @s add rptrain_spawnblocked
 execute if entity @e[tag=rptrain_train,distance=..5] run tag @s add rptrain_spawnblocked
