@@ -16,7 +16,7 @@ scoreboard objectives add rptrain_sndcntr dummy
 scoreboard objectives add rptrain_sndfrq dummy
 scoreboard objectives add gshn28_vehiclehp dummy
 tellraw @a [{"text":"=============================================","color":"gold"}]
-tellraw @a {"text":"         [ Trains V1.15 - By Gshn28 ]         ","bold":True,"underlined":true,"color":"yellow","clickEvent":{"action":"open_url","value":"https://www.youtube.com/user/28Gshn"},"hoverEvent":{"action":"show_text","value":"Click me!"}}
+tellraw @a {"text":"         [ Trains V1.15 - By Gshn28 ]         ","bold":true,"underlined":true,"color":"yellow","clickEvent":{"action":"open_url","value":"https://www.youtube.com/user/28Gshn"},"hoverEvent":{"action":"show_text","value":"Click me!"}}
 tellraw @a [{"text":"               Datapack loaded succesfully!\n","color":"white"}]
 tellraw @a ["",{"text":"[Locomotive Eggs] ","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function trains115_gshn28:locomotive_eggs"}},{"text":"[Wagon Eggs]","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function trains115_gshn28:wagon_eggs"}},{"text":" ","bold":true,"color":"dark_green"},{"text":"[Structure Eggs]\n","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function trains115_gshn28:structure_eggs"}}]
 tellraw @a ["",{"text":"          [Get the Train Controls Book]\n","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/function trains115_gshn28:player_book"}}]
