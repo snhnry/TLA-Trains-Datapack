@@ -14,4 +14,4 @@ execute if score @s rptrain_speed matches 1 run setblock ^-2 ^-1 ^0 minecraft:sp
 execute if score @s rptrain_speed matches 1 run setblock ^0 ^-1 ^0 minecraft:spruce_slab replace
 execute if score @s rptrain_speed matches 1 run setblock ^2 ^-1 ^0 minecraft:spruce_slab replace
 scoreboard players set @s[scores={rptrain_speed=2..}] rptrain_speed 0
-execute if entity @e[type=minecraft:armor_stand,name=rptrain_freerailend,distance=..2] run kill @e[type=minecraft:armor_stand,tag=rptrain_freerailtool,distance=..2]
+execute if entity @e[type=minecraft:armor_stand,name="rptrain_freerailend",distance=..2] run kill @e[type=minecraft:armor_stand,tag=rptrain_freerailtool,distance=..2]
